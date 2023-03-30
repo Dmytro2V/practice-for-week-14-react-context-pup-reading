@@ -3,7 +3,8 @@ import PupImage from './components/PupImage';
 
 const App = () => (
   <div id="app">
-    <PupForm />
+    Hello from APP
+    <PupForm/>    
     <PupImage />
   </div>
 );

@@ -1,14 +1,15 @@
 import {useContext} from 'react';
-import {PupContext} from '.context/PupContext'
+import {PupContext} from '../../context/PupContext'
 
 import speedy from '../../pups/speedy-pup.jpg';
 import banana from '../../pups/banana-pup.jpg';
 import sleepy from '../../pups/sleepy-pup.jpg';
 
 const PupImage = () => {
-  useContext(PupConttext)
+  const { puppyType } = useContext(PupContext)
+  console.log('puppytype', puppyType);
   return (
-    <img src={speedy} alt="pup" />
+    <img src={puppyType} alt="pup" />
   );
 };
 
